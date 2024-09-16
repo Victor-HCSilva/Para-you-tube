@@ -1,0 +1,23 @@
+{
+    "name": "Red And Blue",
+    "short_name": "Cor no youtube",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "Extensão para cor no youtube",
+    "action": {
+        "default_popup": "html_for_youtube.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["background_redAndBlue.js"],
+            "css": ["css_for_redAndBlue.css"]
+        }
+    ],
+    "permissions": [
+        "https://youtube.com/*"
+    ],
+    "background": {
+        "service_worker": "background_redAndBlue.js"
+    }
+}
