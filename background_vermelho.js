@@ -37,7 +37,7 @@ p1, p2, p3{
     <div id="hours"></div>
 `);
 
-//caso const name não seja encontrado essa constante retorna Victor_Hugo, experimente dar F5 na pg.
+//
 position.insertAdjacentHTML('beforeend', 
 `
 <h1><u><span style= "color: 'green'; text-align: center;"> ${name}  </u></span>
