@@ -15,30 +15,20 @@ const logo_youtube = document.querySelector("#logo-icon")//logo do you tube
 const posicao_nome = document.querySelector("#country-code")
 const imagem_temporaria = document.querySelector("#logo > ytd-yoodle-renderer > picture > img")
 const fonte_youtube = document.querySelector("#yt-formatted-string")
-
+const remove_button = document.querySelector("#remove")//remover botões
 
 logo_youtube.style.display = "None"//Retirando o logo do you tube, para substituir pela minha imagem
 posicao_nome.style.display = "none"//Retirando a palavra "BR"
 imagem_temporaria.style.display = "none"//Retirando...
 //ytd.style.color = "red"//mudando a cor?
 
+
+
 posicao_nome.insertAdjacentHTML("afterend","<nome style='display: block; margin-top: 20px'>zVAZIO...</nome>")
 
 
 // ATALHO / IMAGEM DO LOGO LICHES
 
-
-end.insertAdjacentHTML('beforebegin',
-
-    `
-    <style>
-    
-    }
-    </style>
-    
-    Vazio :(
-        
-    `);
 
 // BOTÕES 
 
@@ -53,8 +43,6 @@ image_position_logo.insertAdjacentHTML('beforeend',
 #image_position{
     border-radius: 100%;
     margin-top: 20px;
-</style>
-
     <img id="image_position" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-8vg2DPED21dOJr95BoC4pxVVXaQJx6M-tA&s" height="60" width="60">
     `
     )
@@ -66,8 +54,10 @@ position_red.insertAdjacentHTML('beforebegin',
 
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 *{
     font-size:1rem
+    font-family: "Rubik", sans-serif;
 
 }
 
@@ -76,6 +66,7 @@ position_red.insertAdjacentHTML('beforebegin',
     margin: auto;
 }
 #blue{
+    text-decoration:none;
     color:black;
     border:1px rgb(250,200, 0, 1.0) solid ;
     border-radius:6px;
@@ -87,6 +78,7 @@ position_red.insertAdjacentHTML('beforebegin',
     color:blue;
 }
 #red{
+    text-decoration:none;
     color:black;
     border:1px rgb(250,200, 0, 1.0) solid ;
     border-radius:6px;
@@ -98,6 +90,7 @@ position_red.insertAdjacentHTML('beforebegin',
     color:red;
 }
 #padrao{
+    text-decoration:none;
     color:black;
     border:1px rgb(250,200, 0, 1.0) solid ;
     border-radius:6px;
@@ -109,6 +102,7 @@ position_red.insertAdjacentHTML('beforebegin',
     color: rgb(250,200, 0, 1.0);
 }
 #rosa{
+    text-decoration:none;
     color:black;
     border:1px rgb(250,200, 0, 1.0) solid ;
     border-radius:6px;
@@ -120,6 +114,7 @@ position_red.insertAdjacentHTML('beforebegin',
     color: pink;
 }
 #verde{
+    text-decoration:none;
     color:black;
     border:1px rgb(250,200, 0, 1.0) solid ;
     border-radius:6px;
@@ -133,6 +128,7 @@ position_red.insertAdjacentHTML('beforebegin',
 
 
 #roxo{
+    text-decoration:none;
     color:black;
     border:1px rgb(250,200, 0, 1.0) solid ;
     border-radius:6px;
@@ -145,6 +141,7 @@ position_red.insertAdjacentHTML('beforebegin',
 }
 
 #sigaa{
+    text-decoration:none;
     background: rgb(0,150,225,1.0);
     border-radius:6px;
     color: white;
@@ -157,17 +154,14 @@ position_red.insertAdjacentHTML('beforebegin',
     color:white;
 }
 a{
+    text-decoration:none;
     color: white
-    
-    
 }
 #email{
+    text-decoration:none;
     background: rgb(0,200,30,1.0);
     border-radius:6px;
     color: yellow;
-    
-    
-
 }
 #email:hover{
     transition:1s;
@@ -177,7 +171,9 @@ a{
 #email_a:hover{
     border: 0px solid black;
 }
+/*============================================================================================================================================================*/
 #chat{
+    text-decoration:none;
     background: rgb(0,0,0,1.0);
     border-radius:6px;
     border: 0.5px solid olive;
@@ -188,10 +184,11 @@ a{
 }
 #chat:hover{
     transition:1s;
-    background: rgb(100,100,100,1.0);
+    background: rgb(50,0,0,1.0);
 }
 
 #tradutor{
+    text-decoration:none;
     background: rgb(0,0,150,1.0);
     border-radius:6px;
     border: 0.5px solid olive;
@@ -200,12 +197,13 @@ a{
     font-family: 'Cambria'
 
 }
-#tradutorq:hover{
+#tradutor:hover{
     transition:1s;
     background: rgb(0,150,250,1.0);
 }
 
 #lichess{
+    text-decoration:none;
     background: rgb(0,0,0,1.0);
     border-radius:6px;
     border: 0.5px solid white;
@@ -215,30 +213,29 @@ a{
 
 #lichess:hover{       
     transition:0.3s;
-    border: 1px solid rgb(250,0,0);
+    border: 1px solid rgb(0,250,0);
 
 }
 #AI_studio{
-    background: rgb(0,0,150,1.0);
+    text-decoration:none;
+    background: rgb(0,0,150);
     border-radius:6px;
     color: white;
-    
 }
-
 #AI_studio:hover{       
     transition:0.3s;
-    border: 1px solid rgb(250,250,250);
-
+    background-color: rgb(0,0,250);
 }
 #github{
+    text-decoration:none;
     background-color:rgb(70,0,70);
     color: white;
     border-radius: 6px;
 }
-#Github:hover{
+#github:hover{
     transition: 0.3s;
-    border: 1px solid white;
-    gi
+    background-color:rgb(120,0,120);
+    
 }
 
 </style>
@@ -293,10 +290,9 @@ teste
 
 </button >
 
-
-
 <br>
 <br>
+
 <button id="padrao">Clean</button>
 <button id="red">Red</button>
 <button id="blue">Blue</button>
@@ -564,4 +560,71 @@ function Modo (){
     alert('funcionou')
 }
 
+
+
+
 botao.addEventListener('click', Modo)
+
+
+
+//remover botoes
+
+// Declaração das constantes
+const id_sigaa_ = document.querySelector("#sigaa");
+const id_email_ = document.querySelector("#email");
+const id_email_a_ = document.querySelector("#email_a");
+const id_chat_ = document.querySelector("#chat");
+const id_link_chat_ = document.querySelector("#link_chat");
+const id_AI_studio_ = document.querySelector("#AI_studio");
+const id_tradutor_ = document.querySelector("#tradutor");
+const id_link_tradutor_ = document.querySelector("#link_tradutor");
+const id_lichess_ = document.querySelector("#lichess");
+const id_github_ = document.querySelector("#github");
+const id_Github_ = document.querySelector("#Github");
+const id_padrao_ = document.querySelector("#padrao");
+const id_red_ = document.querySelector("#red");
+const id_blue_ = document.querySelector("#blue");
+const id_rosa_ = document.querySelector("#rosa");
+const id_verde_ = document.querySelector("#verde");
+const id_roxo_ = document.querySelector("#roxo");
+
+
+
+// Inserindo o botão
+end.insertAdjacentHTML('beforebegin', `
+    <style>
+        #remove {
+            color: white;
+            background-color: darkred;
+            font-size: 0.8rem;
+        }
+    </style>
+    <button id="remove" onclick="
+    (function() {
+        // Ocultando os elementos individualmente
+        document.querySelector('#sigaa').style.display = 'none';
+        document.querySelector('#email').style.display = 'none';
+        document.querySelector('#email_a').style.display = 'none';
+        document.querySelector('#chat').style.display = 'none';
+        document.querySelector('#link_chat').style.display = 'none';
+        document.querySelector('#AI_studio').style.display = 'none';
+        document.querySelector('#tradutor').style.display = 'none';
+        document.querySelector('#link_tradutor').style.display = 'none';
+        document.querySelector('#lichess').style.display = 'none';
+        document.querySelector('#github').style.display = 'none';
+        document.querySelector('#Github').style.display = 'none';
+        document.querySelector('#padrao').style.display = 'none';
+        document.querySelector('#red').style.display = 'none';
+        document.querySelector('#blue').style.display = 'none';
+        document.querySelector('#rosa').style.display = 'none';
+        document.querySelector('#verde').style.display = 'none';
+        document.querySelector('#roxo').style.display = 'none';
+
+        alert('rcarregue a pagina (F5) para que voltem a aparecer');
+    })();
+">Retirar botões</button>
+
+    </script>
+`);
+
+
