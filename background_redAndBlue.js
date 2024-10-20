@@ -620,7 +620,7 @@ end.insertAdjacentHTML('beforebegin', `
         document.querySelector('#verde').style.display = 'none';
         document.querySelector('#roxo').style.display = 'none';
 
-        alert('rcarregue a pagina (F5) para que voltem a aparecer');
+        alert('Recarregue a pagina (F5) para que voltem a aparecer');
     })();
 ">Retirar botões</button>
 
